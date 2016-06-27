@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta charset="utf-8">
+<meta content="Webシステムテスト観点" about="/php/d7/node/21" property="dc:title">
+<meta about="/php/d7/node/21" property="sioc:num_replies" content="0" datatype="xsd:integer">
+<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+<link rel="next" href="http://leanprojectman.com/php/d7/node/26">
+<link rel="prev" href="http://leanprojectman.com/php/d7/node/24">
+<meta name="Generator" content="Drupal 7 (http://drupal.org)">
+<link rel="canonical" href="http://leanprojectman.com/php/d7/node/21">
+<link rel="shortlink" href="http://leanprojectman.com/php/d7/node/21">
+<link rel="up" href="http://leanprojectman.com/php/d7/technical">
+  <title>Webシステムテスト観点 | ３分プロジェクト管理 (Lean Project Man)</title>
+  
+
+
+  
+
+
+
+
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+<link rel="stylesheet" type="text/css" href="21.css" media="all">
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-21 node-type-book">
+    <div id="wrapper" class="clearfix">
+<div id="header-top" class="clearfix">
+<div id="logo"><!--start logo-->
+<a indepth="true" href="default.html" title="ホーム">
+<img src="3fun_logo.png" alt="ホーム">
+</a>
+<div id="site-slogan">ＩＴプロジェクトを成功に導く３分で読める３つのポイント</div><!--site slogan-->
+</div><!--end logo-->
+ <!-- / start search box region -->
+    <div class="search-box">
+      <div class="region region-search-box">
+  <div id="block-block-2" class="block block-block">
+
+      
+  <div class="content">
+    <table width="60%"><tbody><tr><td>
+<!-- twitter --><p><a indepth="true" class="twitter-share-button" data-lang="ja" data-size="large" data-url="http://leanprojectman.com" data-via="itnomirai" href="share.html">ツイート</a> </p>
+</td>
+<td>
+<!-- facebook --><p>
+<iframe allowtransparency="" src="21_1.html" style="border-width: medium; border-style: none; border-color: -moz-use-text-color; width: 100px; height: 21px; overflow: hidden;" frameborder="0" scrolling="no"></iframe></p>
+</td>
+<td>
+<!-- linkedin --></td>
+</tr></tbody></table>  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+    </div> <!-- / end search box region -->
+  <ul id="header-social">
+<li><a href="http://www.twitter.com/otaketake" target="_top" rel="me"><img src="twitter.png" alt="twitter"></a></li>
+<li><a href="http://www.facebook.com/Leanprojectmancom" target="_top" rel="me"><img src="facebook.png" alt="facebook"></a></li>
+<li><a indepth="true" href="rss.html"><img src="rss.png" alt="RSS"></a></li>
+</ul><!--end header-social-->
+</div><!--end header-top-->
+<div id="header" class="clearfix"><!--start header--> 
+    <div id="main-menu">
+    <ul class="menu"><li class="first leaf"><a indepth="true" href="default.html">ホーム</a></li>
+<li class="leaf"><a indepth="true" href="point1.html" title="プロジェクト管理に絶対欠かせない３つのポイント">１．遠くまで見通す</a></li>
+<li class="leaf"><a indepth="true" href="point2.html" title="">2. 最悪に備える</a></li>
+<li class="last leaf"><a indepth="true" href="point3.html">3. 話をよく聞く</a></li>
+</ul></div><!-- end main-menu -->
+</div> <!-- /#header -->
+<div id="content-body">
+<div class="breadcrumb"><h2 class="element-invisible">現在地</h2><nav class="breadcrumb"><a indepth="true" href="default.html">ホーム</a> » <a indepth="true" href="technical.html">Web / ITプロジェクト Tips</a> » Webシステムテスト観点</nav></div>
+  <section id="main" role="main" class="clear">
+        <a id="main-content"></a>
+            <h1 class="title" id="page-title">Webシステムテスト観点</h1>                    <div class="region region-content">
+  <div id="block-system-main" class="block block-system">
+
+      
+  <div class="content">
+                            
+      
+    
+  <div class="content">
+    <div class="field field-name-body field-type-text-with-summary field-label-inline clearfix"><div class="field-label">本文:&nbsp;</div><div class="field-items"><div class="field-item even" property="content:encoded"><p>単体・結合テストが終わり基本動作確認後、どういう観点でシステムテストを作っていくかについてポイントをまとめてあります。</p>
+<table style="width: 500px;" border="1" cellpadding="1" cellspacing="1"><thead><tr><th scope="col" width="30%">チェックポイント</th>
+<th scope="col">概要</th>
+</tr></thead><tbody><tr><td>エラー画面表示</td>
+<td>stacktraceが表示されたり、apacheやtomcatのバージョンを類推できる画面が表示されないか</td>
+</tr><tr><td>３秒ルール</td>
+<td>すべてのページレスポンスが３秒以内にあるかどうか</td>
+</tr><tr><td>画面競合動作</td>
+<td>同一の編集画面・データを二人で並行して操作したときの競合排除ロジックの確認</td>
+</tr><tr><td>ボタン連打</td>
+<td>同一ボタンを２回連続クリックできないようになっているか。</td>
+</tr><tr><td>項目データフル入力</td>
+<td>画面内の全項目（テキスト、テキストエリア）について項目の長さ目いっぱいにデータをいれてみる。</td>
+</tr><tr><td>メール送信</td>
+<td>想定されるすべてのメール送信はチェック。（テスト中は社外に送らないよう注意）</td>
+</tr><tr><td>全リンク</td>
+<td>画面内の全リンク・ボタン等を一通りぜんぶチェック</td>
+</tr><tr><td>戻る・リロード</td>
+<td>Webシステムはユーザのあらゆる行動について想定しておく必要がある。</td>
+</tr><tr><td>途中ページ呼出</td>
+<td>通常の遷移ではいきなり入ってこれないページにbookmarkやURLの推定などにより参照してみる。</td>
+</tr><tr><td>脆弱性</td>
+<td>専門の会社に委託するのが望ましいが、xssとＳＱＬインジェクション、クロスサイトリクエストフォージェリは、比較的ソースチェックや簡易テストでリスクを十分回避できる。基本ソフトは原則最新バージョンに。</td>
+</tr><tr><td>負荷テスト</td>
+<td>インターネットに公開し、かつデータベースや重いコンテンツがあるページについて重点的に。RDBをつかったＷｅｂシステム開発は特にデータベース周辺にボトルネックが発生しやすい</td>
+</tr><tr><td>過去データ</td>
+<td>移行・リリース前に作られたデータについての挙動確認。古いデータは過去の不具合の影響などで想定外の値が入っている可能性もある</td>
+</tr><tr><td>マルチブラウザ</td>
+<td>当該システムでサポートするブラウザはもちろん、サポートしないブラウザでも動作をみておく</td>
+</tr></tbody></table><p>&nbsp;</p>
+<p>&nbsp;</p>
+</div></div></div>  <div id="book-navigation-31" class="book-navigation">
+    
+        <div class="page-links clearfix">
+              <a indepth="true" href="24.html" class="page-previous" title="前のページへ">‹ システム設計ポリシー</a>
+                    <a indepth="true" href="technical.html" class="page-up" title="親ページへ移動">上</a>
+                    <a indepth="true" href="26.html" class="page-next" title="次のページへ">サーバ共通実装方針 ›</a>
+          </div>
+    
+  </div>
+  </div>
+
+      <footer>
+                </footer>
+  
+    </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+
+  </section> <!-- /#main -->
+  
+      <aside id="sidebar-first" role="complementary" class="sidebar clearfix">
+      <div class="region region-sidebar-first">
+  <div id="block-book-navigation" class="block block-book">
+
+        <h2>メニュー</h2>
+    
+  <div class="content">
+      <div id="book-block-menu-1" class="book-block-menu">
+    <ul class="menu"><li class="first last collapsed"><a indepth="true" href="1.html">リーンプロジェクト管理</a></li>
+</ul>  </div>
+  <div id="book-block-menu-47" class="book-block-menu">
+    <ul class="menu"><li class="first last leaf"><a indepth="true" href="47.html">FXBBスタート</a></li>
+</ul>  </div>
+  <div id="book-block-menu-30" class="book-block-menu">
+    <ul class="menu"><li class="first last collapsed"><a indepth="true" href="othertips.html">PMBOK 9の知識エリアから</a></li>
+</ul>  </div>
+  <div id="book-block-menu-31" class="book-block-menu">
+    <ul class="menu"><li class="first last expanded active-trail"><a indepth="true" href="technical.html" class="active-trail">Web / ITプロジェクト Tips</a><ul class="menu"><li class="first leaf"><a indepth="true" href="24.html">システム設計ポリシー</a></li>
+<li class="leaf active-trail"><a indepth="true" href="21.html" class="active-trail active">Webシステムテスト観点</a></li>
+<li class="leaf"><a indepth="true" href="26.html">サーバ共通実装方針</a></li>
+<li class="leaf"><a indepth="true" href="23.html">サービスレベル定義例</a></li>
+<li class="leaf"><a indepth="true" href="25.html">システム運用ポリシー</a></li>
+<li class="leaf"><a indepth="true" href="27.html">リリースチェックポイント１</a></li>
+<li class="leaf"><a indepth="true" href="28.html">リリースチェックポイント２</a></li>
+<li class="last leaf"><a indepth="true" href="29.html">リリース作業チェックポイント１２</a></li>
+</ul></li>
+</ul>  </div>
+  <div id="book-block-menu-36" class="book-block-menu">
+    <ul class="menu"><li class="first last collapsed"><a indepth="true" href="curry_top.html">ご当地レトルトカレーお取り寄せログ</a></li>
+</ul>  </div>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+    </aside>  <!-- /#sidebar-first -->
+  
+  </div> <!-- end content-body -->
+<div class="clear"></div>
+<div id="footer" class="clearfix">
+    <div class="clear"></div>
+<div class="region region-footer">
+  <div id="block-block-4" class="block block-block">
+
+        <h2>こんな方におすすめ</h2>
+    
+  <div class="content">
+    <ul><li>プロジェクト管理でもっとも大事なエッセンスを短時間で知りたい</li>
+<li>PMBOKなど方法論は勉強したが、なかなか現場で生かせない</li>
+<li>プロジェクト管理ソフトを入れて、ノウハウ本も読んでいるがうまくいかない</li>
+<li>規模に関係なくどんなITプロジェクトでも失敗しないポイントを知りたい</li>
+</ul><p>リーンプロジェクト管理は、プロジェクトマネージメントに<span style="color: rgb(255, 0, 0);"><strong>もっとも大切なことだけを３つ</strong></span>にまとめました。</p>
+<p>&nbsp;</p>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+<div class="clear"></div>
+<div id="copyright">Copyright © 2014, ３分プロジェクト管理 (Lean Project Man)</div>
+</div> <!-- /#footer -->
+</div> <!-- /#wrapper -->
+  
+
+
+
+</body></html>
